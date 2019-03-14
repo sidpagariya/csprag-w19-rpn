@@ -15,3 +15,8 @@ class TestBasics(unittest.TestCase):
     def test_divide(self):
         result = rpn.calculate("6 3 /")
         self.assertEqual(2, result)
+    def test_pow(self):
+        result = rpn.calculate("3 7 ^")
+        self.assertEqual(2187, result)
+if __name__ == '__main__':
+    unittest.main()
